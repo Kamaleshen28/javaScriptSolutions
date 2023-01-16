@@ -1,5 +1,6 @@
 function replaceCharacterRegular(str){
     let result='';
+
     
     function fun(item){
         let char = item.charCodeAt(0);
@@ -12,7 +13,6 @@ function replaceCharacterRegular(str){
     return result;
 }
 console.log(replaceCharacterRegular('codeacademy'));
-
 //----------
 
 const replaceCharacter = (str) => {
@@ -28,6 +28,7 @@ const replaceCharacter = (str) => {
     return result;
 };
 console.log(replaceCharacter('lazyinterns'));
+
 
 module.exports = {replaceCharacter, replaceCharacterRegular};
 
