@@ -26,4 +26,3 @@ const largestEvenNumberA = (numbers) => {
 
 console.log( largestEvenNumberA([1,2,3,4,5]));
 module.exports =  {largestEvenNumberA, largestEvenNumberN};
-
