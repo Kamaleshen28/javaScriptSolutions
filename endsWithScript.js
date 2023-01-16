@@ -3,6 +3,7 @@ function endsWithScriptRegular(str){
 }
 console.log(endsWithScriptRegular('javaScript'));
 
+
 //-------
 
 const endsWithScriptArrow = (str) => {
