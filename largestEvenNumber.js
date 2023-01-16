@@ -18,11 +18,12 @@ const largestEvenNumberA = (numbers) => {
 
     const funArrow =  (item) => {
         resultA = ( (item%2==0 && item>resultA)?item:resultA );
-    }
+    };
     numbers.forEach(funArrow);
     return (resultA===Number.MIN_SAFE_INTEGER)? -1: resultA;
-}
+};
 
 
 console.log( largestEvenNumberA([1,2,3,4,5]));
 module.exports =  {largestEvenNumberA, largestEvenNumberN};
+
