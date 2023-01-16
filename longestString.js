@@ -1,4 +1,5 @@
 function longestStringRegular(arrStr){
+
     let result = '';
     arrStr.forEach(fun);
 
@@ -9,10 +10,12 @@ function longestStringRegular(arrStr){
 }
 console.log(longestStringRegular(['we', 'love', 'code', 'academy']));
 
+
 //---------
 
 const longestStringArrow = (arrStr) => {
     let result = '';
+
 
     const fun = (item) => result = (result.length < item.length)? item: result;
 
@@ -20,5 +23,6 @@ const longestStringArrow = (arrStr) => {
     return result;
 };
 console.log(longestStringArrow(['we', '', 'code', '']));
+
 
 module.exports = {longestStringArrow, longestStringRegular};
