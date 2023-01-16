@@ -1,6 +1,6 @@
 
 function changeCapitalizationRegular(str){
-    let result="";
+    let result='';
     str.split('').forEach(fun);
 
     function fun(item){
@@ -13,12 +13,12 @@ function changeCapitalizationRegular(str){
     }
     return result;
 }
-console.log(changeCapitalizationRegular("MeRRy hAD a LITTle lAMp"))
+console.log(changeCapitalizationRegular('MeRRy hAD a LITTle lAMp'));
 
 //------
 
 const changeCapitalizationArrow = (str) => {
-    let result="";
+    let result='';
 
     const fun = (item) => {
         let char = item.charCodeAt(0);
@@ -27,10 +27,10 @@ const changeCapitalizationArrow = (str) => {
             (
                 (char>=97 && char<=122)? result+item.toUpperCase(): result+item
             );
-    }
+    };
     str.split('').forEach(fun);
     return result;
-}
-console.log(changeCapitalizationArrow("KamalESHEN"))
+};
+console.log(changeCapitalizationArrow('KamalESHEN'));
 
 module.exports = {changeCapitalizationRegular, changeCapitalizationArrow};
