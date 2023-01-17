@@ -4,6 +4,7 @@ const timesNumbers = (numbers, times) => {
     }
     return numbers.map((num) => {
         if(typeof num === 'string'){
+
             throw new Error('Input only number array');
         }
         return times*num;
