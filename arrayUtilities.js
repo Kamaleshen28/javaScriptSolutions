@@ -3,7 +3,8 @@ const timesNumbers = (numbers, times) => {
         throw new Error('Input is not an array');
     }
     return numbers.map((num) => {
-        if(typeof num === "string"){
+        if(typeof num === 'string'){
+
             throw new Error('Input only number array');
         }
         return times*num;
